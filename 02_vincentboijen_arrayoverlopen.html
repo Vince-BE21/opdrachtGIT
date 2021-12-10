@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opdracht array overlopen</title>
+    <script text="text/javascript">
+      let automerken = [];
+      let aantal = prompt("Hoeveel automerken wil je ingeven?", "3");
+      for (let i = 1; i <= parseInt(aantal); i++){
+        let inputauto = prompt(`Geef merk nr ${i} in.`);
+        automerken.push(inputauto);
+      }
+
+      let lengte = automerken.length
+      document.write(`<p>U gaf de volgende merken in:</p>`);
+      for (i = 0; i < lengte; i++){
+        document.write(`<p>${i+1} ${automerken[i]}</p>`);
+    }
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
